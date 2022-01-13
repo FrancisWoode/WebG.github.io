@@ -1,0 +1,158 @@
+<!Doctype >
+<html>
+<head>
+<title>Convertor</title>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+    body{background-color:rgba(224, 226, 231, 0.678); color: whitesmoke;}
+    
+
+.container{
+    height: 190px;
+    position: relative;
+    border:3px solid green;
+}
+
+.title{
+    text-align: center;
+    width: auto;
+    height: 50;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #3f73a01f;
+    background: linear-gradient(to right, #29497a, #18d340f1,#288acce7);
+    padding: 3px;
+    
+}
+.title2{
+    text-align: center;
+    width: auto;
+    height: 50;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #3f73a01f;
+    background: linear-gradient(to right,#288acce7, #20e04a, #288acce7,#20e04a);
+    padding: 3px;
+    
+}
+.button-box{
+    width: 370px;
+    margin: 6% auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #4970c485;
+    border-radius: 20px;
+    padding: 5px;
+    height: 510px;
+    background-color: rgb(9, 26, 80);
+}
+hr.new2{
+    border-top: 1px solid rgb(66, 78, 146);
+  }
+  footer {
+  background-color: rgb(36, 36, 61);
+padding: 1px;
+text-align: center;
+color: white;
+}
+
+
+</style>
+<link rel="convertor" type="text/css" href="convertor.css" media="screen"/>
+</head>
+<body>
+    <div class="button-box">
+
+<br>
+    <div class="container">
+    <div class="center">
+    <div class="title">
+        <h2>Convert Your CWA to GPA</h2>
+    </div>
+<form name="myform">
+    <h3>Enter your CWA below and click on submit when done.</h3>
+<input type="text" name="cwa"placeholder="CWA"size="5">=<input type="" name="result" placeholder="GPA" style="background-color:rgb(119, 198, 223); border-color:skyblue;color: rgb(2, 2, 2)" disabled ><br>
+    <input type="button" value="Submit" onclick="Answer()" style="border-radius:5px; background-color:blue; color: white"><br><br><br><br><br>
+ 
+</form>
+    </div>
+</div>
+<script type="text/javascript">
+function Answer(){
+cwa=parseInt(myform.cwa.value);
+
+var result
+if (cwa>100){
+    result='Invalid CWA'
+}
+else{result=(cwa/20);}
+myform.result.value=result;
+}
+
+</script>
+<br><br><br><br>
+
+<div class="container">
+    <div class="center">
+        <div class="title2">
+        <h2>Convert Your GPA to CWA</h2>
+    </div>
+<form name="myfor">
+    <h3>Enter your GPA below and click on submit when done.</h3>
+<input type="text" name="gpa"placeholder="GPA"size="5">=<input type="" name="resul" placeholder="CWA"disabled style="background-color:rgb(119, 198, 223); border-color:skyblue;color: rgb(2, 2, 2)"><br>
+ <div class="subm">
+<input type="button" value="Submit" onclick="Ans()" style="background-color:blue;border-radius:5px; color: white"><br><br><br><br><br>
+</div>  
+</form>
+    </div>
+</div>
+
+<script type="text/javascript">
+function Ans(){
+gpa=parseFloat(myfor.gpa.value);
+
+var resul;
+if(gpa>6){
+    resul='Invalid GPA'
+}
+else{resul=(gpa*20);}
+myfor.resul.value=resul;
+}
+
+</script>
+</div>
+<br><br><br>
+<!--Footer-->
+<footer>
+    <p>©2020</p>
+    <p>Webgee</p>
+    <div class="logos">
+        <a href="whatsapp:contact=0271157276@s.whatsapp.com">
+      <img src="Images/WhatsApp.svg" height="7%" width="7%"/>
+    </a>&nbsp;&nbsp;&nbsp;
+       <a href="https://mobile.twitter.com">
+      <img src="Images/Twitter.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+      <a href=" tel:+233271157276">
+      <img src="Images/kall.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://instagram.com">
+      <img src="Images/instagram.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://youtu.be/dHbA7aLxorQ.com">
+      <img src="Images/You tube.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://xhibitwoode@gmail.com">
+      <img src="Images/Gmail.svg" height="7%" width="7%">
+    </a>&nbsp;&nbsp;&nbsp;
+      <a href="https://telegram.org">
+      <img src="Images/Tele.svg" height="7%" width="7%">
+    </a>
+   
+    </div>
+  </footer>
+
+</body>
+</html>
